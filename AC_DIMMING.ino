@@ -23,7 +23,7 @@ void loop() {
    //Read the value of the pot and map it from 10 to 10.000 us. AC frequency is 50Hz, so the period is 20ms. We want to control the power
    //of each half period, so the maximum is 10ms or 10.000us. In my case, I've mapped it up to 7.200us since 10.000 was too much
    
-   myvalue = map(analogRead(A0),0,1024,9=500,10);
+   myvalue = map(analogRead(A0),0,1024,9500,10);
     if (mydelay)
     {
       delayMicroseconds(myvalue); //This delay controls the power
