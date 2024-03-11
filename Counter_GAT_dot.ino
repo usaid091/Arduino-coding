@@ -9,7 +9,7 @@ String tempString;
 
 long int RELAY = 0;
 
-int hitObject = false;
+int hitObject = true;
 
 int Buzzer = 9; // Positive pin of Buzzer to Arduino pin 9
 
@@ -66,7 +66,7 @@ pinMode(ssr, OUTPUT); // LED as output
 
 Serial.begin(9600);
 
-pinMode(IR_Sensor_INPUT,INPUT_PULLUP); // IR sensor as INPUT(Used inbuilt pullup resister using program)
+pinMode(IR_Sensor_INPUT,INPUT); // IR sensor as INPUT(Used pulldown resister using program)
  lcd.begin();
 disp.begin();
  disp.displayText("PREFORM COUNTER SYSTEM", PA_LEFT, 30, 30, PA_SCROLL_LEFT,PA_SCROLL_LEFT);
